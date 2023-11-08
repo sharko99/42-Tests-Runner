@@ -6,7 +6,7 @@ Run with:\
 ``./runner ft_strlcpy.c ft_strlcat.c`` to test specific files
 
 
-## How tocreate tests?
+## How to create tests?
 Put your test files in /tests/c_file/test1.c
 
 ## How to modify the runner?
