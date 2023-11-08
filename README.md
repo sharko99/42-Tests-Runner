@@ -7,7 +7,9 @@ Run with:\
 
 
 ## How to create tests?
-Put your test files in /tests/c_file/test1.c
+Put your test files in /tests/c_file/test1.c\
+Example:\
+``/tests/ft_strlcpy/test1.c``
 
 ## How to modify the runner?
 The source cpp file is included in /source
