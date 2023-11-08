@@ -2,7 +2,7 @@
 C tests runner made in c++
 
 Run with:
-``./runner`` to test all files
+``./runner`` to test all files\n
 ``./runner ft_strlcpy.c ft_strlcat.c`` to test specific files
 
 
