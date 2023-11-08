@@ -1,8 +1,8 @@
 # 42-Tests-Runner
 C tests runner made in c++
 
-Run with:
-``./runner`` to test all files\n
+Run with:\
+``./runner`` to test all files\
 ``./runner ft_strlcpy.c ft_strlcat.c`` to test specific files
 
 
