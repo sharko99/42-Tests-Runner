@@ -65,11 +65,31 @@ int main(int argc, char **argv)
                     headerName = argv[i + 1];
                     i++;
                     std::cout << "\033[33mIncluding header " << headerName << ".\033[0m\n";
+                    if (argc - i == 1)
+                    {
+                        for (const auto &entry : fs::directory_iterator("tests"))
+                        {
+                            if (entry.is_directory())
+                            {
+                                functionsToTest.push_back(entry.path().filename().string());
+                            }
+                        }
+                    }
                 }
                 else if (argv[i][1] == 'a')
                 {
                     includeAll = true;
                     std::cout << "\033[33mIncluding all files.\033[0m\n";
+                    if (argc - i == 1)
+                    {
+                        for (const auto &entry : fs::directory_iterator("tests"))
+                        {
+                            if (entry.is_directory())
+                            {
+                                functionsToTest.push_back(entry.path().filename().string());
+                            }
+                        }
+                    }
                 }
                 else
                 {
