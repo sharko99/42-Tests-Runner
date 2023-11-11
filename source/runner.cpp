@@ -65,7 +65,7 @@ int main(int argc, char **argv)
                     headerName = argv[i + 1];
                     i++;
                     std::cout << "\033[33mIncluding header " << headerName << ".\033[0m\n";
-                    if (argc - i == 1)
+                    if (argc - 1 == 1)
                     {
                         for (const auto &entry : fs::directory_iterator("tests"))
                         {
@@ -80,7 +80,7 @@ int main(int argc, char **argv)
                 {
                     includeAll = true;
                     std::cout << "\033[33mIncluding all files.\033[0m\n";
-                    if (argc - i == 1)
+                    if (argc - 1 == 1)
                     {
                         for (const auto &entry : fs::directory_iterator("tests"))
                         {
