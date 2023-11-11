@@ -2,9 +2,20 @@
 C tests runner made in c++
 
 Run with:\
+**Basic usage**\
 ``./runner`` to test all files\
-``./runner ft_strlcpy.c ft_strlcat.c`` to test specific files
+``./runner ft_strlcpy.c ft_strlcat.c`` to test specific files\
 
+**Including all files**\
+``./runner -a`` to test all files\
+``./runner -a ft_strlcpy.c ft_strlcat.c`` to test specific files\
+For example, if you have an external function like ft_strlen.\
+> This will significantly increase the run time as it has to compile each files for all tests individually for accuracy.
+
+**Including specific header**\
+``./runner -d libft.h`` to test all files\
+``./runner ft_strlcpy.c ft_strlcat.c libft.h`` to test specific files\
+Not needed in most of case, but availale.\
 
 ## How to create tests?
 Put your test files in /tests/c_file/test1.c\
